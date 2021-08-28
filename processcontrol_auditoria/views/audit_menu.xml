@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+                id="menu_audit_root"
+                name="Auditoria"
+                groups="processcontrol_auditoria.audit_group"
+                web_icon="processcontrol_auditoria,static/description/auditoria.jpg"
+        />
+
+        <menuitem
+                id="menu_reportes_main"
+                name="Reports"
+                groups="processcontrol_auditoria.audit_group"
+                parent="menu_audit_root"
+        />
+
+        <menuitem
+                id="menu_separator_sale_order_report"
+                name="Pedido de venta"
+                sequence="1"
+                parent="menu_reportes_main"
+                groups="processcontrol_auditoria.audit_group"
+        />
+
+        <menuitem
+                id="menu_separator_project_report"
+                name="Proyectos"
+                sequence="2"
+                parent="menu_reportes_main"
+                groups="processcontrol_auditoria.audit_group"
+        />
+
+    </data>
+</odoo>
